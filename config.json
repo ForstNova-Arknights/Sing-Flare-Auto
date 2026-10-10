@@ -3,7 +3,7 @@
 
   "dns": {
     "servers": [
-      { "type": "https", "tag": "local",  "server": "1.1.1.1", "detour": "direct" },
+      { "type": "https", "tag": "local",  "server": "1.1.1.1" },
       { "type": "https", "tag": "remote", "server": "1.1.1.1", "detour": "warp" }
     ],
     "final": "local",
