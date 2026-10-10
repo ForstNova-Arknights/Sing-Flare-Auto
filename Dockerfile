@@ -14,9 +14,9 @@ WORKDIR /app
 # 1. 下载并安装 sing-box (对应你的 web-app)
 # 根据 Alpine 架构下载对应的 amd64 版本
 RUN wget https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/sing-box-${SING_BOX_VERSION}-linux-amd64-musl.tar.gz && \
-    tar -zxvf sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz && \
-    mv sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box /usr/local/bin/sing-box && \
-    rm -rf sing-box-${SING_BOX_VERSION}-linux-amd64*
+    tar -zxvf sing-box-${SING_BOX_VERSION}-linux-amd64-musl.tar.gz && \
+    mv sing-box-${SING_BOX_VERSION}-linux-amd64-musl/sing-box /usr/local/bin/sing-box && \
+    rm -rf sing-box-${SING_BOX_VERSION}-linux-amd64-musl*
 
 # 2. 下载并安装 cloudflared (对应你的 sys-service)
 RUN wget -O /usr/local/bin/cloudflared https://github.com/cloudflare/cloudflared/releases/${CLOUDFLARED_VERSION}/download/cloudflared-linux-amd64
