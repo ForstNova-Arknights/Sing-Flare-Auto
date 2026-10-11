@@ -15,7 +15,7 @@
       "type": "wireguard",
       "tag": "warp",
       "system": false,
-      "mtu": 1280,
+      "mtu": 1200,
       "address": ["172.16.0.2/32"],
       "private_key": "uP8oVRB1HxNLV0FdydSeRLLhOlHE35g/JJcakLymP0k=",
       "peers": [
